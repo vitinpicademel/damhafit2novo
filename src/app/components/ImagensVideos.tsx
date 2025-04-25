@@ -284,7 +284,7 @@ export default function ImagensVideos() {
         {/* Modal de imagem ampliada */}
         {isImageOpen && (
           <div 
-            className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-12" 
+            className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 md:p-12" 
             onClick={() => setIsImageOpen(false)}
           >
             <button 
@@ -292,14 +292,14 @@ export default function ImagensVideos() {
                 e.stopPropagation();
                 setIsImageOpen(false);
               }}
-              className="absolute top-8 right-8 z-50 bg-white hover:bg-gold rounded-full p-3 text-gold hover:text-white shadow-xl transition-all duration-300"
+              className="absolute top-4 md:top-8 right-4 md:right-8 z-50 bg-white hover:bg-gold rounded-full p-2 md:p-3 text-gold hover:text-white shadow-xl transition-all duration-300"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
             <div 
-              className="relative max-w-5xl w-full h-[80vh] flex items-center justify-center bg-white/5 rounded-3xl overflow-hidden"
+              className="relative w-full h-[80vh] md:max-w-5xl flex items-center justify-center bg-white/5 rounded-xl md:rounded-3xl overflow-hidden"
               onClick={(e) => e.stopPropagation()}
             >
               <div className="relative w-full h-full" onClick={(e) => e.stopPropagation()}>
@@ -310,6 +310,7 @@ export default function ImagensVideos() {
                   className="object-contain"
                   quality={100}
                   priority
+                  sizes="(max-width: 768px) 100vw, 80vw"
                 />
               </div>
             </div>
