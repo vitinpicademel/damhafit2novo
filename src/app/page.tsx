@@ -70,7 +70,7 @@ export default function Home() {
             <div className="h-12">
               <Link href="/">
                 <Image
-                  src="/images/logo.png"
+                  src="/images/logo.PNG"
                   alt="Logo Damha Fit II"
                   width={180}
                   height={48}
