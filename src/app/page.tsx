@@ -273,8 +273,8 @@ export default function Home() {
                 borderBottomRightRadius: '300px'
               }}>
                 <iframe
-                  src="https://www.youtube.com/embed/nEZgLYtrQg0?autoplay=1&mute=1&loop=1&playlist=nEZgLYtrQg0&vq=hd1080&modestbranding=1&controls=0&showinfo=0&rel=0"
-                  className="absolute w-full h-full object-cover scale-150"
+                  src="https://www.youtube.com/embed/nEZgLYtrQg0?autoplay=1&mute=1&loop=1&playlist=nEZgLYtrQg0&vq=hd2160&modestbranding=1&controls=0&showinfo=0&rel=0&playsinline=1&enablejsapi=1&origin=https://damhafit2.com.br"
+                  className="absolute w-[120%] h-[120%] -left-[10%] -top-[10%] object-cover"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   title="Vídeo sobre o Damha Fit II"
