@@ -237,7 +237,7 @@ export default function Home() {
         </div>
 
         {/* Controles do Slider */}
-        <div className="absolute bottom-20 md:bottom-32 right-4 md:right-12 lg:right-24 flex space-x-3 z-10">
+        <div className="hidden md:flex absolute bottom-20 md:bottom-32 right-4 md:right-12 lg:right-24 space-x-3 z-10">
           {slides.map((_, index) => (
             <button
               key={index}
