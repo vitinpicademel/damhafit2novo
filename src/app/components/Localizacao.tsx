@@ -31,11 +31,11 @@ export default function Localizacao() {
         </div>
 
         {/* Mapa e Informações */}
-        <div className="flex flex-col lg:flex-row gap-8 md:gap-12 relative">
+        <div className="flex flex-col lg:flex-row gap-4 md:gap-12 relative">
           {/* Imagem de Localização */}
-          <div className="lg:w-2/3 relative">
-            <div className="absolute inset-0 bg-[#00A651]/10 transform rotate-3 rounded-2xl"></div>
-            <div className="relative aspect-[4/3] md:aspect-[16/9] rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
+          <div className="lg:w-2/3 relative -mx-4 md:mx-0">
+            <div className="absolute inset-0 bg-[#00A651]/10 transform rotate-3 rounded-none md:rounded-2xl"></div>
+            <div className="relative aspect-[3/4] md:aspect-[16/9] rounded-none md:rounded-2xl overflow-hidden shadow-2xl border-0 md:border-8 border-white">
               <Image
                 src="/images/galeria/localizacao.jpg"
                 alt="Mapa de localização"
