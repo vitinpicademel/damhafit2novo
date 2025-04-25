@@ -210,6 +210,99 @@ export default function StatusObra() {
             </div>
             <h3 className="text-base md:text-xl text-gray-800 text-center font-medium">Rede de água</h3>
           </div>
+
+          {/* Rede Elétrica */}
+          <div className="bg-white/50 backdrop-blur-sm rounded-2xl p-4 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#C2B59B]/20">
+            <div className="relative w-20 h-20 md:w-32 md:h-32 mx-auto mb-2 md:mb-4">
+              <svg className="w-full h-full transform -rotate-90">
+                <circle
+                  cx="50%"
+                  cy="50%"
+                  r="45%"
+                  fill="none"
+                  stroke="#E5E0D9"
+                  strokeWidth="8"
+                />
+                <circle
+                  cx="50%"
+                  cy="50%"
+                  r="45%"
+                  fill="none"
+                  stroke="#C2B59B"
+                  strokeWidth="8"
+                  strokeDasharray="377"
+                  strokeDashoffset={377 - (377 * 0) / 100}
+                  strokeLinecap="round"
+                />
+              </svg>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <span className="text-xl md:text-3xl font-semibold text-gray-800">0%</span>
+              </div>
+            </div>
+            <h3 className="text-base md:text-xl text-gray-800 text-center font-medium">Rede Elétrica</h3>
+          </div>
+
+          {/* Terraplanagem */}
+          <div className="bg-white/50 backdrop-blur-sm rounded-2xl p-4 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#C2B59B]/20">
+            <div className="relative w-20 h-20 md:w-32 md:h-32 mx-auto mb-2 md:mb-4">
+              <svg className="w-full h-full transform -rotate-90">
+                <circle
+                  cx="50%"
+                  cy="50%"
+                  r="45%"
+                  fill="none"
+                  stroke="#E5E0D9"
+                  strokeWidth="8"
+                />
+                <circle
+                  cx="50%"
+                  cy="50%"
+                  r="45%"
+                  fill="none"
+                  stroke="#C2B59B"
+                  strokeWidth="8"
+                  strokeDasharray="377"
+                  strokeDashoffset={377 - (377 * 0) / 100}
+                  strokeLinecap="round"
+                />
+              </svg>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <span className="text-xl md:text-3xl font-semibold text-gray-800">0%</span>
+              </div>
+            </div>
+            <h3 className="text-base md:text-xl text-gray-800 text-center font-medium">Terraplanagem</h3>
+          </div>
+
+          {/* Pavimentação */}
+          <div className="bg-white/50 backdrop-blur-sm rounded-2xl p-4 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#C2B59B]/20">
+            <div className="relative w-20 h-20 md:w-32 md:h-32 mx-auto mb-2 md:mb-4">
+              <svg className="w-full h-full transform -rotate-90">
+                <circle
+                  cx="50%"
+                  cy="50%"
+                  r="45%"
+                  fill="none"
+                  stroke="#E5E0D9"
+                  strokeWidth="8"
+                />
+                <circle
+                  cx="50%"
+                  cy="50%"
+                  r="45%"
+                  fill="none"
+                  stroke="#C2B59B"
+                  strokeWidth="8"
+                  strokeDasharray="377"
+                  strokeDashoffset={377 - (377 * 0) / 100}
+                  strokeLinecap="round"
+                />
+              </svg>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <span className="text-xl md:text-3xl font-semibold text-gray-800">0%</span>
+              </div>
+            </div>
+            <h3 className="text-base md:text-xl text-gray-800 text-center font-medium">Pavimentação</h3>
+          </div>
         </div>
 
         <div className="mt-8 md:mt-16 text-center">
