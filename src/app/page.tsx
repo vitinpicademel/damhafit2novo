@@ -273,11 +273,15 @@ export default function Home() {
                 borderBottomRightRadius: '300px'
               }}>
                 <iframe
-                  src="https://www.youtube.com/embed/nEZgLYtrQg0?autoplay=1&mute=1&loop=1&playlist=nEZgLYtrQg0"
-                  className="absolute w-full h-full object-cover"
+                  src="https://www.youtube.com/embed/nEZgLYtrQg0?autoplay=1&mute=1&loop=1&playlist=nEZgLYtrQg0&vq=hd1080&modestbranding=1&controls=0&showinfo=0&rel=0"
+                  className="absolute w-full h-full object-cover scale-150"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   title="Vídeo sobre o Damha Fit II"
+                  style={{
+                    border: 'none',
+                    pointerEvents: 'none'
+                  }}
                 />
               </div>
             </div>
