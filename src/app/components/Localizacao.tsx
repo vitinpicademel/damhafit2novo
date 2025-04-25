@@ -34,15 +34,15 @@ export default function Localizacao() {
         <div className="flex flex-col lg:flex-row gap-6 md:gap-12 relative">
           {/* Imagem de Localização */}
           <div className="lg:w-2/3 relative -mx-2 md:mx-0">
-            <div className="absolute inset-0 bg-[#00A651]/10 transform rotate-3 rounded-xl md:rounded-2xl"></div>
+            <div className="absolute inset-0 bg-[#00A651]/5 transform rotate-3 rounded-xl md:rounded-2xl"></div>
             <div className="relative aspect-[5/4] md:aspect-[16/9] rounded-xl md:rounded-2xl overflow-hidden shadow-2xl border-4 md:border-8 border-white">
               <Image
                 src="/images/galeria/localizacao.jpg"
                 alt="Mapa de localização"
                 fill
                 className="object-cover"
+                priority
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               <div className="absolute bottom-4 md:bottom-6 left-4 md:left-6">
                 <a 
                   href="https://www.google.com/maps/search/?api=1&query=Av.+Niza+Marquez+Guaritá,+Uberaba+-+MG"
