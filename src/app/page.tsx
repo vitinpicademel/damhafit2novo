@@ -311,13 +311,13 @@ export default function Home() {
       <section id="diferenciais" className="bg-[#C2B59B] relative overflow-hidden">
         <div className="relative min-h-[600px]">
           {/* Background Image */}
-          <div className="absolute top-0 bottom-0 left-0 w-[45%] overflow-visible">
+          <div className="absolute top-0 bottom-0 left-0 w-full md:w-[45%] overflow-visible">
             <div className="relative w-[120%] h-[130%] -mt-[10%] -ml-[10%]">
               <Image
                 src="/images/leaf-bg.png"
                 alt="Folha decorativa"
                 fill
-                className="object-cover"
+                className="object-cover opacity-20 md:opacity-100"
                 style={{
                   objectPosition: '60% 50%'
                 }}
@@ -326,115 +326,115 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="container mx-auto px-4 relative z-10 py-16">
-            <div className="flex items-start">
+          <div className="container mx-auto px-4 relative z-10 py-8 md:py-16">
+            <div className="flex flex-col md:flex-row md:items-start">
               {/* Lado esquerdo - Título */}
-              <div className="w-[45%] relative pl-4 pt-8">
-                <div className="bg-black/20 backdrop-blur-sm rounded-3xl p-8 max-w-[600px]">
-                  <span className="text-white uppercase tracking-wider text-sm mb-6 block font-medium drop-shadow-lg">DIFERENCIAIS</span>
-                  <h2 className="text-[42px] font-light text-white leading-[1.2] drop-shadow-lg" style={{
+              <div className="w-full md:w-[45%] relative px-0 md:pl-4 pt-4 md:pt-8 mb-8 md:mb-0">
+                <div className="bg-black/20 backdrop-blur-sm rounded-2xl md:rounded-3xl p-6 md:p-8 max-w-[600px]">
+                  <span className="text-white uppercase tracking-wider text-sm mb-4 md:mb-6 block font-medium drop-shadow-lg">DIFERENCIAIS</span>
+                  <h2 className="text-3xl md:text-[42px] font-light text-white leading-[1.2] drop-shadow-lg" style={{
                     textShadow: '0 2px 8px rgba(0,0,0,0.4)'
                   }}>
                     <span className="italic block mb-2">O Lugar onde lazer</span>
                     <span className="italic block">e conforto são prioridades</span>
                   </h2>
-                  <p className="text-white text-lg mt-8 leading-relaxed font-light drop-shadow-lg">
+                  <p className="text-white text-base md:text-lg mt-6 md:mt-8 leading-relaxed font-light drop-shadow-lg">
                     No Damha Fit Uberaba, o lazer é completo e pensado para transformar sua rotina. Piscinas, quadras esportivas, academia equipada e espaços gourmet oferecem momentos únicos para todas as idades. Seja relaxando, cuidando da saúde ou celebrando, você aproveita o melhor da vida sem sair de casa, com a segurança e a privacidade que você merece.
                   </p>
                 </div>
               </div>
 
               {/* Lado direito - Diferenciais em grid */}
-              <div className="w-[55%] pl-16 pt-12">
-                <div className="grid grid-cols-3 gap-x-8 gap-y-10">
+              <div className="w-full md:w-[55%] px-0 md:pl-16 pt-4 md:pt-12">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-x-8 md:gap-y-10">
                   {/* Centro de Convívio */}
                   <div className="flex flex-col items-center text-center group">
-                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 w-[100px] h-[100px] flex items-center justify-center mb-3 shadow-lg transition-all duration-300 group-hover:bg-white/20 group-hover:scale-105 border border-white/20">
-                      <svg className="w-12 h-12 text-white" viewBox="0 0 24 24">
+                    <div className="bg-white/10 backdrop-blur-sm rounded-xl md:rounded-2xl p-4 md:p-6 w-[80px] h-[80px] md:w-[100px] md:h-[100px] flex items-center justify-center mb-2 md:mb-3 shadow-lg transition-all duration-300 group-hover:bg-white/20 group-hover:scale-105 border border-white/20">
+                      <svg className="w-8 h-8 md:w-12 md:h-12 text-white" viewBox="0 0 24 24">
                         <path fill="currentColor" d="M15 9h2v2h-2V9m2-4h-2v2h2V5m-6 10h2v-2h-2v2m2-10h-2v2h2V5m-2 6h2V9h-2v2M7 9h2V7H7v2m12 14H5V3h14m0-2H5c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2M7 19h2v-2H7v2m0-6h2v-2H7v2m0-6h2V5H7v2m6 10h2v-2h-2v2"/>
                       </svg>
                     </div>
-                    <span className="text-white text-base font-medium tracking-wide">Centro de Convívio</span>
+                    <span className="text-white text-sm md:text-base font-medium tracking-wide">Centro de Convívio</span>
                   </div>
 
                   {/* Quadra Poliesportiva */}
                   <div className="flex flex-col items-center text-center group">
-                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 w-[100px] h-[100px] flex items-center justify-center mb-3 shadow-lg transition-all duration-300 group-hover:bg-white/20 group-hover:scale-105 border border-white/20">
-                      <svg className="w-12 h-12 text-white" viewBox="0 0 24 24">
+                    <div className="bg-white/10 backdrop-blur-sm rounded-xl md:rounded-2xl p-4 md:p-6 w-[80px] h-[80px] md:w-[100px] md:h-[100px] flex items-center justify-center mb-2 md:mb-3 shadow-lg transition-all duration-300 group-hover:bg-white/20 group-hover:scale-105 border border-white/20">
+                      <svg className="w-8 h-8 md:w-12 md:h-12 text-white" viewBox="0 0 24 24">
                         <path fill="currentColor" d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10s10-4.5 10-10S17.5 2 12 2m-5 4l3 3l-3 3l-3-3l3-3m10 0l3 3l-3 3l-3-3l3-3M7 17l3-3l3 3l-3 3l-3-3m7 0l3-3l3 3l-3 3l-3-3m-4-5c.6 0 1 .4 1 1s-.4 1-1 1s-1-.4-1-1s.4-1 1-1"/>
                       </svg>
                     </div>
-                    <span className="text-white text-base font-medium tracking-wide">Quadra Poliesportiva</span>
+                    <span className="text-white text-sm md:text-base font-medium tracking-wide">Quadra Poliesportiva</span>
                   </div>
 
                   {/* Mini Campo */}
                   <div className="flex flex-col items-center text-center group">
-                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 w-[100px] h-[100px] flex items-center justify-center mb-3 shadow-lg transition-all duration-300 group-hover:bg-white/20 group-hover:scale-105 border border-white/20">
-                      <svg className="w-12 h-12 text-white" viewBox="0 0 24 24">
+                    <div className="bg-white/10 backdrop-blur-sm rounded-xl md:rounded-2xl p-4 md:p-6 w-[80px] h-[80px] md:w-[100px] md:h-[100px] flex items-center justify-center mb-2 md:mb-3 shadow-lg transition-all duration-300 group-hover:bg-white/20 group-hover:scale-105 border border-white/20">
+                      <svg className="w-8 h-8 md:w-12 md:h-12 text-white" viewBox="0 0 24 24">
                         <path fill="currentColor" d="M12 2c1.9 0 3.6.6 4.9 1.7L2.7 17.9C2.2 16.7 2 15.4 2 14c0-6.6 5.4-12 12-12m10 12c0 6.6-5.4 12-12 12c-1.9 0-3.6-.6-4.9-1.7L19.3 10.1c.5 1.2.7 2.5.7 3.9M8.2 5L20 16.8c-1.1 2.3-3 4.2-5.3 5.3L2.9 10.3C4 8 5.9 6.1 8.2 5"/>
                       </svg>
                     </div>
-                    <span className="text-white text-base font-medium tracking-wide">Mini Campo</span>
+                    <span className="text-white text-sm md:text-base font-medium tracking-wide">Mini Campo</span>
                   </div>
 
                   {/* Quadra de Tênis Saibro */}
                   <div className="flex flex-col items-center text-center group">
-                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 w-[100px] h-[100px] flex items-center justify-center mb-3 shadow-lg transition-all duration-300 group-hover:bg-white/20 group-hover:scale-105 border border-white/20">
-                      <svg className="w-12 h-12 text-white" viewBox="0 0 24 24">
+                    <div className="bg-white/10 backdrop-blur-sm rounded-xl md:rounded-2xl p-4 md:p-6 w-[80px] h-[80px] md:w-[100px] md:h-[100px] flex items-center justify-center mb-2 md:mb-3 shadow-lg transition-all duration-300 group-hover:bg-white/20 group-hover:scale-105 border border-white/20">
+                      <svg className="w-8 h-8 md:w-12 md:h-12 text-white" viewBox="0 0 24 24">
                         <path fill="currentColor" d="M18.5 2A1.5 1.5 0 0 1 20 3.5A1.5 1.5 0 0 1 18.5 5c-.23 0-.45-.05-.65-.15l-3.69 3.7.34.34l2.82-2.83h2.83L17 9.21l1.44 1.44l-.71.7l-1.44-1.44L13 13.21V10.38l-2.83 2.83l.34.34l3.7-3.69c-.1-.2-.15-.42-.15-.65A1.5 1.5 0 0 1 15.5 7A1.5 1.5 0 0 1 17 8.5c0 .23-.05.45-.15.65l3.7-3.69c-.1-.2-.15-.42-.15-.65A1.5 1.5 0 0 1 22 3.5"/>
                       </svg>
                     </div>
-                    <span className="text-white text-base font-medium tracking-wide">Quadra de Tênis</span>
+                    <span className="text-white text-sm md:text-base font-medium tracking-wide">Quadra de Tênis</span>
                   </div>
 
                   {/* Beach Tênis */}
                   <div className="flex flex-col items-center text-center group">
-                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 w-[100px] h-[100px] flex items-center justify-center mb-3 shadow-lg transition-all duration-300 group-hover:bg-white/20 group-hover:scale-105 border border-white/20">
-                      <svg className="w-12 h-12 text-white" viewBox="0 0 24 24">
+                    <div className="bg-white/10 backdrop-blur-sm rounded-xl md:rounded-2xl p-4 md:p-6 w-[80px] h-[80px] md:w-[100px] md:h-[100px] flex items-center justify-center mb-2 md:mb-3 shadow-lg transition-all duration-300 group-hover:bg-white/20 group-hover:scale-105 border border-white/20">
+                      <svg className="w-8 h-8 md:w-12 md:h-12 text-white" viewBox="0 0 24 24">
                         <path fill="currentColor" d="M19.5 12c.93 0 1.78.34 2.44.91L20 15l-1-1l-1 1l-1-1l-1 1l-1-1l-1 1l-1-1l-1 1l-1-1l-1 1l-1-1l-1 1l-1-1l-1.94-2.09c.66-.57 1.51-.91 2.44-.91c1.03 0 1.97.42 2.65 1.09c.68-.67 1.62-1.09 2.65-1.09Z"/>
                       </svg>
                     </div>
-                    <span className="text-white text-base font-medium tracking-wide">Beach Tênis</span>
+                    <span className="text-white text-sm md:text-base font-medium tracking-wide">Beach Tênis</span>
                   </div>
 
                   {/* Quadra de Vôlei */}
                   <div className="flex flex-col items-center text-center group">
-                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 w-[100px] h-[100px] flex items-center justify-center mb-3 shadow-lg transition-all duration-300 group-hover:bg-white/20 group-hover:scale-105 border border-white/20">
-                      <svg className="w-12 h-12 text-white" viewBox="0 0 24 24">
+                    <div className="bg-white/10 backdrop-blur-sm rounded-xl md:rounded-2xl p-4 md:p-6 w-[80px] h-[80px] md:w-[100px] md:h-[100px] flex items-center justify-center mb-2 md:mb-3 shadow-lg transition-all duration-300 group-hover:bg-white/20 group-hover:scale-105 border border-white/20">
+                      <svg className="w-8 h-8 md:w-12 md:h-12 text-white" viewBox="0 0 24 24">
                         <path fill="currentColor" d="M13 6.5A6.5 6.5 0 0 1 19.5 13a6.5 6.5 0 0 1-6.5 6.5A6.5 6.5 0 0 1 6.5 13A6.5 6.5 0 0 1 13 6.5m0 2c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5s4.5-2 4.5-4.5s-2-4.5-4.5-4.5"/>
                       </svg>
                     </div>
-                    <span className="text-white text-base font-medium tracking-wide">Quadra de Vôlei</span>
+                    <span className="text-white text-sm md:text-base font-medium tracking-wide">Quadra de Vôlei</span>
                   </div>
 
                   {/* Playground */}
                   <div className="flex flex-col items-center text-center group">
-                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 w-[100px] h-[100px] flex items-center justify-center mb-3 shadow-lg transition-all duration-300 group-hover:bg-white/20 group-hover:scale-105 border border-white/20">
-                      <svg className="w-12 h-12 text-white" viewBox="0 0 24 24">
+                    <div className="bg-white/10 backdrop-blur-sm rounded-xl md:rounded-2xl p-4 md:p-6 w-[80px] h-[80px] md:w-[100px] md:h-[100px] flex items-center justify-center mb-2 md:mb-3 shadow-lg transition-all duration-300 group-hover:bg-white/20 group-hover:scale-105 border border-white/20">
+                      <svg className="w-8 h-8 md:w-12 md:h-12 text-white" viewBox="0 0 24 24">
                         <path fill="currentColor" d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2s-2-.9-2-2s.9-2 2-2m3.5 6l-4.5 1l-4.5-1c-.8-.2-1.5.4-1.5 1.2V17h2v5h3v-3.5h2V22h3v-5h2v-7.8c0-.8-.7-1.4-1.5-1.2"/>
                       </svg>
                     </div>
-                    <span className="text-white text-base font-medium tracking-wide">Playground</span>
+                    <span className="text-white text-sm md:text-base font-medium tracking-wide">Playground</span>
                   </div>
 
                   {/* Churrasqueira */}
                   <div className="flex flex-col items-center text-center group">
-                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 w-[100px] h-[100px] flex items-center justify-center mb-3 shadow-lg transition-all duration-300 group-hover:bg-white/20 group-hover:scale-105 border border-white/20">
-                      <svg className="w-12 h-12 text-white" viewBox="0 0 24 24">
+                    <div className="bg-white/10 backdrop-blur-sm rounded-xl md:rounded-2xl p-4 md:p-6 w-[80px] h-[80px] md:w-[100px] md:h-[100px] flex items-center justify-center mb-2 md:mb-3 shadow-lg transition-all duration-300 group-hover:bg-white/20 group-hover:scale-105 border border-white/20">
+                      <svg className="w-8 h-8 md:w-12 md:h-12 text-white" viewBox="0 0 24 24">
                         <path fill="currentColor" d="M8.1 13.34l2.83-2.83L3.91 3.5c-1.56 1.56-1.56 4.09 0 5.66l4.19 4.18m6.78-1.81c1.53.71 3.68.21 5.27-1.38c1.91-1.91 2.28-4.65.81-6.12c-1.46-1.46-4.2-1.1-6.12.81c-1.59 1.59-2.09 3.74-1.38 5.27L3.7 19.87l1.41 1.41L12 14.41l6.88 6.88l1.41-1.41L13.41 13l1.47-1.47z"/>
                       </svg>
                     </div>
-                    <span className="text-white text-base font-medium tracking-wide">Churrasqueira</span>
+                    <span className="text-white text-sm md:text-base font-medium tracking-wide">Churrasqueira</span>
                   </div>
 
                   {/* Espaço Pet */}
                   <div className="flex flex-col items-center text-center group">
-                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 w-[100px] h-[100px] flex items-center justify-center mb-3 shadow-lg transition-all duration-300 group-hover:bg-white/20 group-hover:scale-105 border border-white/20">
-                      <svg className="w-12 h-12 text-white" viewBox="0 0 24 24">
+                    <div className="bg-white/10 backdrop-blur-sm rounded-xl md:rounded-2xl p-4 md:p-6 w-[80px] h-[80px] md:w-[100px] md:h-[100px] flex items-center justify-center mb-2 md:mb-3 shadow-lg transition-all duration-300 group-hover:bg-white/20 group-hover:scale-105 border border-white/20">
+                      <svg className="w-8 h-8 md:w-12 md:h-12 text-white" viewBox="0 0 24 24">
                         <path fill="currentColor" d="M8.35 3c1.18-.17 2.43.29 3.11 1.29c.91-.68 2.12-.89 3.26-.36c.64.3 1.16.86 1.42 1.52c1.4-.04 2.78.8 3.31 2.14c.47 1.12.27 2.43-.44 3.36c.49.54.85 1.2 1.06 1.92c.92-.31 1.96-.17 2.75.38c1.35.94 1.73 2.84.83 4.22c-.77 1.18-2.27 1.71-3.62 1.31c-.21 1.01-.78 1.94-1.63 2.54c-1.02.72-2.33.91-3.5.52c-.54.46-1.21.77-1.93.89c.29.89.23 1.87-.18 2.71c-.75 1.52-2.7 2.15-4.24 1.39c-1.33-.65-1.97-2.24-1.54-3.65c-.46-.54-.78-1.21-.89-1.93c-1.05.29-2.19.11-3.08-.51c-1.38-.96-1.77-2.87-.85-4.25c.78-1.18 2.29-1.7 3.63-1.29c.21-1.03.79-1.97 1.66-2.58c1.05-.74 2.41-.93 3.61-.49c.2-.98.75-1.87 1.57-2.47c-.26-.87-.18-1.82.22-2.63c-1.23-.21-2.23-1.3-2.33-2.56c-.1-1.24.61-2.45 1.78-2.97Z"/>
                       </svg>
                     </div>
-                    <span className="text-white text-base font-medium tracking-wide">Espaço Pet</span>
+                    <span className="text-white text-sm md:text-base font-medium tracking-wide">Espaço Pet</span>
                   </div>
                 </div>
               </div>
