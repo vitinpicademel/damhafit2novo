@@ -72,16 +72,30 @@ export default function Home() {
                 <Image
                   src="/images/logo.PNG"
                   alt="Logo Damha Fit II"
-                  width={180}
-                  height={48}
-                  className="object-contain h-12"
+                  width={140}
+                  height={36}
+                  className="object-contain h-8 md:h-12"
                   priority
                 />
               </Link>
             </div>
 
+            {/* Botão Menu Mobile */}
+            <div className="md:hidden">
+              <Link 
+                href="https://wa.me/553433339576?text=[DF1] Olá! Gostaria de mais informações sobre o Damha Fit II."
+                target="_blank"
+                className="bg-gold hover:bg-gold-dark text-white px-4 py-2 rounded-full text-sm font-bold transition-all duration-300 hover:shadow-lg hover:scale-105 flex items-center space-x-2"
+              >
+                <span>TENHO INTERESSE</span>
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+            </div>
+
             {/* Links de Navegação */}
-            <div className="flex items-center">
+            <div className="hidden md:flex items-center">
               <ul className="flex items-center gap-6">
                 <li>
                   <Link href="#sobre" className="relative group px-4 py-2 transition-colors duration-300 text-base font-semibold text-white hover:text-gold bg-black/30 rounded-full">
@@ -188,24 +202,24 @@ export default function Home() {
         </div>
 
         {/* Conteúdo do Hero */}
-        <div className="absolute inset-0 flex items-center justify-center px-12 lg:px-24">
+        <div className="absolute inset-0 flex items-center justify-center px-4 md:px-12 lg:px-24">
           <div className="text-white max-w-3xl text-center">
-            <span className={`text-gold font-medium tracking-wider mb-6 block animate-fade-in-down ${activeSlide === 1 ? 'text-3xl' : 'text-xl'} mt-20`}>
+            <span className={`text-gold font-medium tracking-wider mb-4 md:mb-6 block animate-fade-in-down ${activeSlide === 1 ? 'text-2xl md:text-3xl' : 'text-lg md:text-xl'} mt-12 md:mt-20`}>
               {slides[activeSlide].subtitle}
             </span>
-            <h1 className="text-8xl font-display mb-8 animate-fade-in leading-tight">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-display mb-4 md:mb-8 animate-fade-in leading-tight">
               {slides[activeSlide].title}
             </h1>
-            <p className="text-2xl font-light mb-12 text-white/90">
+            <p className="text-lg md:text-2xl font-light mb-8 md:mb-12 text-white/90">
               {slides[activeSlide].description}
             </p>
-            <div className="space-y-4 mb-12">
-              <div className="bg-black/30 backdrop-blur-sm border border-white/10 rounded-2xl p-8 inline-block shadow-2xl animate-fade-in-up">
-                <p className="text-4xl font-light">A PARTIR DE <span className="font-semibold text-gold">R$ 145.000,00</span></p>
+            <div className="space-y-4 mb-8 md:mb-12">
+              <div className="bg-black/30 backdrop-blur-sm border border-white/10 rounded-2xl p-6 md:p-8 inline-block shadow-2xl animate-fade-in-up">
+                <p className="text-2xl md:text-4xl font-light">A PARTIR DE <span className="font-semibold text-gold">R$ 145.000,00</span></p>
               </div>
             </div>
-            <div className="mt-12 flex space-x-6 justify-center animate-fade-in-up delay-300 hero-buttons">
-              <Link href="#sobre" className="bg-gold hover:bg-gold-dark text-white px-10 py-4 rounded-full text-lg transition-all duration-300 hover:shadow-lg hover:scale-105 flex items-center">
+            <div className="mt-8 md:mt-12 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 justify-center animate-fade-in-up delay-300 hero-buttons">
+              <Link href="#sobre" className="bg-gold hover:bg-gold-dark text-white px-6 md:px-10 py-3 md:py-4 rounded-full text-base md:text-lg transition-all duration-300 hover:shadow-lg hover:scale-105 flex items-center justify-center">
                 <span>Saiba mais</span>
                 <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -214,7 +228,7 @@ export default function Home() {
               <Link 
                 href="https://wa.me/553433339576?text=[DF1] Olá! Gostaria de mais informações sobre o Damha Fit II."
                 target="_blank"
-                className="border-2 border-white/30 hover:border-gold text-white px-10 py-4 rounded-full text-lg transition-all duration-300 hover:bg-black/20 backdrop-blur-sm"
+                className="border-2 border-white/30 hover:border-gold text-white px-6 md:px-10 py-3 md:py-4 rounded-full text-base md:text-lg transition-all duration-300 hover:bg-black/20 backdrop-blur-sm flex items-center justify-center"
               >
                 Fale conosco
               </Link>
@@ -223,7 +237,7 @@ export default function Home() {
         </div>
 
         {/* Controles do Slider */}
-        <div className="absolute bottom-32 right-12 lg:right-24 flex space-x-3 z-10">
+        <div className="absolute bottom-20 md:bottom-32 right-4 md:right-12 lg:right-24 flex space-x-3 z-10">
           {slides.map((_, index) => (
             <button
               key={index}
@@ -239,27 +253,27 @@ export default function Home() {
       </section>
 
       {/* Sobre Section */}
-      <section id="sobre" className="py-24 bg-[#FFFBF4] relative overflow-hidden">
+      <section id="sobre" className="py-16 md:py-24 bg-[#FFFBF4] relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
-          <div className="flex flex-col lg:flex-row items-center gap-12">
+          <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-12">
             {/* Conteúdo */}
             <div className="lg:w-1/2">
               <div className="max-w-xl">
-                <span className="text-gold uppercase tracking-wider font-medium mb-4 block">SOBRE</span>
-                <h2 className="text-4xl lg:text-5xl font-display text-gray-800 mb-8 leading-tight">
+                <span className="text-gold uppercase tracking-wider font-medium mb-3 md:mb-4 block">SOBRE</span>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-display text-gray-800 mb-6 md:mb-8 leading-tight">
                   A vida é melhor com a natureza ao redor.
                 </h2>
-                <div className="space-y-6 text-gray-600">
-                  <p className="leading-relaxed">
+                <div className="space-y-4 md:space-y-6 text-gray-600">
+                  <p className="leading-relaxed text-base md:text-lg">
                     Viver em contato permanente com a natureza é transformador, faz bem para nossa saúde física e mental.
                   </p>
-                  <p className="leading-relaxed">
+                  <p className="leading-relaxed text-base md:text-lg">
                     Assim como o lazer, a atividade física e a prática de esportes são essenciais para se viver com mais qualidade.
                   </p>
-                  <p className="leading-relaxed">
+                  <p className="leading-relaxed text-base md:text-lg">
                     Por isso, o Damha Fit II, com uma área total de <span className="font-semibold">mais de 150 mil m²</span> de verde e uma área de lazer formidável, que inclui piscinas, quadras de tênis, espaços gourmet e até lagos para a pesca, é a escolha certa para quem procura uma vida mais saudável, harmoniosa e prazerosa.
                   </p>
-                  <p className="leading-relaxed">
+                  <p className="leading-relaxed text-base md:text-lg">
                     Próximo ao centro da cidade e com um sistema de segurança moderno, ele ainda proporciona todo conforto e tranquilidade que você e sua família merecem.
                   </p>
                 </div>
@@ -267,10 +281,10 @@ export default function Home() {
             </div>
 
             {/* Imagem com formato curvo */}
-            <div className="lg:w-1/2 relative">
-              <div className="aspect-[16/12] relative rounded-[100px] overflow-hidden shadow-2xl" style={{
-                borderTopLeftRadius: '300px',
-                borderBottomRightRadius: '300px'
+            <div className="lg:w-1/2 relative w-full mt-8 lg:mt-0">
+              <div className="aspect-[16/12] relative rounded-[50px] md:rounded-[100px] overflow-hidden shadow-2xl" style={{
+                borderTopLeftRadius: '150px',
+                borderBottomRightRadius: '150px'
               }}>
                 <iframe
                   src="https://www.youtube.com/embed/nEZgLYtrQg0?autoplay=1&mute=1&loop=1&playlist=nEZgLYtrQg0&vq=hd2160&modestbranding=1&controls=0&showinfo=0&rel=0&playsinline=1&enablejsapi=1&origin=https://damhafit2.com.br"
@@ -289,8 +303,8 @@ export default function Home() {
         </div>
 
         {/* Elementos decorativos de fundo */}
-        <div className="absolute top-0 left-0 w-96 h-96 bg-gold/5 rounded-full -translate-y-1/2 -translate-x-1/2"></div>
-        <div className="absolute bottom-0 right-0 w-64 h-64 bg-gold/5 rounded-full translate-y-1/2 translate-x-1/2"></div>
+        <div className="absolute top-0 left-0 w-48 md:w-96 h-48 md:h-96 bg-gold/5 rounded-full -translate-y-1/2 -translate-x-1/2"></div>
+        <div className="absolute bottom-0 right-0 w-32 md:w-64 h-32 md:h-64 bg-gold/5 rounded-full translate-y-1/2 translate-x-1/2"></div>
       </section>
 
       {/* Diferenciais */}
