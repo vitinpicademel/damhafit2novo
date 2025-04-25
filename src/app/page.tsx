@@ -102,7 +102,7 @@ export default function Home() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#status" className="relative group px-4 py-2 transition-colors duration-300 text-base font-semibold text-white hover:text-gold bg-black/30 rounded-full">
+                  <Link href="#status-obra" className="relative group px-4 py-2 transition-colors duration-300 text-base font-semibold text-white hover:text-gold bg-black/30 rounded-full">
                     <span className="relative z-10">Status da obra</span>
                     <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-gold transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                   </Link>

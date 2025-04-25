@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function StatusObra() {
   return (
-    <section className="relative py-24 bg-gradient-to-br from-[#F5EFE6] via-[#F9F5EF] to-[#FFFBF4] overflow-hidden">
+    <section id="status-obra" className="relative py-24 bg-gradient-to-br from-[#F5EFE6] via-[#F9F5EF] to-[#FFFBF4] overflow-hidden">
       {/* Elementos decorativos de fundo */}
       <div className="absolute inset-0">
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#C2B59B]/5 rounded-full translate-x-1/2 -translate-y-1/4"></div>
