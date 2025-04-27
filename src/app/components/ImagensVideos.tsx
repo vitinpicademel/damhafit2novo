@@ -23,7 +23,7 @@ export default function ImagensVideos() {
             Conhecer o Damha Fit II é se encantar.
           </h2>
           <p className="text-2xl text-[#4A3418] italic">
-            Lotes a partir de 5.000 m².
+            Lotes a partir de 250 m².
           </p>
         </div>
 
